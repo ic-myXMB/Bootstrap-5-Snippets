@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 Registration Form Snippet by: ic-myXMB @ github.com/ic-myXMB -->    
+	<title>Registration | Bootstrap 5 Snippet</title>
+	<!-- Bootstrap 5 -->
+	<link href="inc/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome 6 -->
+    <link href="inc/fontawesome/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 offset-sm-2">
+				<div class="border-bottom mb-4 mt-4 pb-2">
+					<div class="alert alert-secondary" role="alert">
+						<h6>This demo shows how to use Font Awesome v6.1.1, Light Switch v0.1.4, JQuery-validation v1.19.3 & JQuery v3.6.0, form reset, a scrollable usage terms modal and the Bootstrap 5 v5.2 framework.<br /><br />
+						This also corrects where JQuery validation .js file and needed JQuery .js file normally needs to be loaded in header of page and now we instead use a window addeventlistener so now allowing placement of .js files in footer above bootstrap .js file.</h4>
+					</div>
+					<!-- Light Switch -->
+					<div class="d-flex">
+					  <div class="form-check form-switch ms-auto mt-3 me-3">
+				        <label class="form-check-label ms-3" for="lightSwitch">
+				         <svg
+				         xmlns="http://www.w3.org/2000/svg"
+				         width="25"
+				         height="25"
+				         fill="currentColor"
+				         class="bi bi-brightness-high"
+				         viewBox="0 0 16 16">
+				         <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+				         </svg>
+				        </label>
+                         <input class="form-check-input" type="checkbox" id="lightSwitch" />
+					  </div>
+					</div>			    
+				</div>
+				<div class="card bg-light">
+					<div class="card-header">
+						<h6 class="card-text">Registration:</h3>
+					</div>
+					<div class="card-body">
+						<form id="signupForm" method="post" class="form-horizontal" action="">
+							<div class="form-group row mb-3">
+								<label class="col-sm-4 col-form-label" for="firstname">First Name:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name" />
+								</div>
+							</div>
+							<div class="form-group row mb-3">
+								<label class="col-sm-4 col-form-label" for="lastname">Last Name:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name" />
+								</div>
+							</div>
+							<div class="form-group row mb-3">
+								<label class="col-sm-4 col-form-label" for="username">Username:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+								</div>
+							</div>
+							<div class="form-group row mb-3">
+								<label class="col-sm-4 col-form-label" for="email">Email:</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+								</div>
+							</div>
+							<div class="form-group row mb-3">
+								<label class="col-sm-4 col-form-label" for="password">Password:</label>
+								<div class="col-sm-6">
+									<input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+								</div>
+							</div>
+							<div class="form-group row mb-3">
+								<label class="col-sm-4 col-form-label" for="confirm_password">Confirm Password:</label>
+								<div class="col-sm-6">
+									<input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password" />
+								</div>
+							</div>
+							<div class="form-group row mb-3">
+								<div class="col-sm-6 offset-sm-4">
+									<div class="form-check">
+										<input type="checkbox" id="agree" name="agree" value="agree" class="form-check-input"/>
+										<label class="form-check-label">Please agree to our usage <button type="button" class="btn btn-link btn-anchor" style="outline: none !important;padding: 0;border: 0;vertical-align: baseline;" data-bs-toggle="modal" data-bs-target="#termsModal"> terms</button>.</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel">
+								<div class="modal-dialog modal-dialog-scrollable">
+									<div class="modal-content bg-light">
+										<div class="modal-header">
+										<h5 class="modal-title" id="termsModalLabel">Usage Terms</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+										<div>
+										<p class=""><span class="">Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern [business name]’s relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.</span></p>
+										<p class=""><span class="">The term ‘[Business Name]’ or ‘us’ or ‘we’ refers to the owner of the website whose registered office is [address]. Our company registration number is [company registration number and place of registration]. The term ‘you’ refers to the user or viewer of our website.</span></p>
+										<p class=""><span class="">The use of this website is subject to the following terms of use:</span></p>
+										<ul class="">
+										<li class=""><span class="">The content of the pages of this website is for your general information and use only. It is subject to change without notice.</span></li><br />
+										<li class=""><span class="">This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].</span></li><br />
+										<li class=""><span class="">Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</span></li><br />
+										<li class=""><span class="">Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.</span></li><br />
+										<li class=""><span class="">This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</span></li><br />
+										<li class=""><span class="">All trade marks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.</span></li><br />
+										<li class=""><span class="">Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence.</span></li><br />
+										<li class=""><span class="">From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</span></li><br />
+										<li class=""><span class="">Your use of this website and any dispute arising out of such use of the website is subject to the laws of [Your Country].</span></li><br />
+										</ul>
+										</div>
+										</div>
+										<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										</div>
+							        </div>
+								</div>
+                            </div>
+
+							<div class="form-group row mb-3">
+								<div class="col-sm-9 offset-sm-4">
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Sign up <i class="fa-solid fa-arrow-right"></i></button>
+									<button type="reset" class="btn btn-secondary" id="clearForm" name="reset form" value="reset">Reset <i class='fa-solid fa-redo-alt'></i></button>
+								</div>
+							</div>
+                            <div class="col-sm-6 offset-sm-4">
+                              <p>Already have an account? <a href="login.html">Login now</a></p>
+                           </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+    // load event happens after all resources are loaded for the page.
+    window.addEventListener('load', function () {
+        // do jQuery logic
+		$.validator.setDefaults( {
+			submitHandler: function () {
+				alert( "submitted!" );
+			}
+		} );
+		$( document ).ready( function () {
+			$( "#signupForm" ).validate( {
+				rules: {
+					firstname: "required",
+					lastname: "required",
+					username: {
+						required: true,
+						minlength: 2
+					},
+					password: {
+						required: true,
+						minlength: 5
+					},
+					confirm_password: {
+						required: true,
+						minlength: 5,
+						equalTo: "#password"
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					agree: "required"
+				},
+				messages: {
+					firstname: "Please enter your firstname.",
+					lastname: "Please enter your lastname.",
+					username: {
+						required: "Please enter a username.",
+						minlength: "Your username must consist of at least 2 characters."
+					},
+					password: {
+						required: "Please provide a password.",
+						minlength: "Your password must be at least 5 characters long."
+					},
+					confirm_password: {
+						required: "Please confirm the password.",
+						minlength: "Your password must be at least 5 characters long.",
+						equalTo: "Please enter the same password as above."
+					},
+					email: {
+						required: "Please enter a valid email address.",
+						email: "Email format: name@example.com"
+					},
+					agree: "Please accept our usage terms."
+				},
+				errorElement: "em",
+				errorPlacement: function ( error, element ) {
+					// Add the `invalid-feedback` class to the error element
+					error.addClass( "invalid-feedback" );
+
+					if ( element.prop( "type" ) === "checkbox" ) {
+						error.insertAfter( element.next( "label" ) );
+					} else {
+						error.insertAfter( element );
+					}
+				},
+				highlight: function ( element, errorClass, validClass ) {
+					$( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
+				},
+				unhighlight: function (element, errorClass, validClass) {
+					$( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
+				}
+			} );
+			$('#clearForm').on('click', function () {
+			// clear out the validation errors
+            $("#signupForm").validate().resetForm();            
+                // remove highlights on reset
+                 $( "input#firstname.form-control" ).removeClass( "is-valid" );
+                 $( "input#lastname.form-control" ).removeClass( "is-valid" );
+                 $( "input#username.form-control" ).removeClass( "is-valid" );
+                 $( "input#email.form-control" ).removeClass( "is-valid" );
+                 $( "input#password.form-control" ).removeClass( "is-valid" );
+				 $( "input#confirm_password.form-control" ).removeClass( "is-valid" ); 
+                 $( ".form-check-input" ).removeClass( "is-valid" ); 
+                 $( ".form-check-label" ).removeClass( "is-valid" );                
+            });
+		});
+	});
+	</script>
+    <!-- Bootstrap 5 Registration Form Snippet by: ic-myXMB @ github.com/ic-myXMB -->	
+	<!-- JQuery -->
+	<script type="text/javascript" src="inc/jquery-3.6.0.js"></script>
+	<!-- JQuery Validate -->
+    <script type="text/javascript" src="inc/jquery.validate.js"></script>
+    <!-- Bootstrap 5 -->
+	<script type="text/javascript" src="inc/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Light Switch -->
+	<script type="text/javascript" src="inc/switch.js"></script>  	
+</body>
+</html>
